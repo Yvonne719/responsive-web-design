@@ -1,0 +1,19 @@
+body {
+    background-color: cornsilk;
+    font-family: arial;
+}
+a:hover {
+    color:pink;
+}
+a {
+    color: plum
+}
+h1 {
+    text-align: center;
+    color: #2D0200;
+}
+hr {
+    height: 2px;
+    background-color:orange;
+    border-color:orange;
+};
