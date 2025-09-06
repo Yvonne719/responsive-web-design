@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Yve's Bakery and Bookstore Survey</h1>
+    <p id="description">Hi! We're glad you're here. Help us improve by completing this survey.</p>
+   <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Full Name: <input id="name" type="text" required placeholder="Yvonne Eshun" name="full-name"></label>
+      <label id="email-label" for="email">Your Email: <input id="email" type="email" name="e-mail" required placeholder="yve@gmail.com"></label>
+      <label id="number-label" for="number">Age (in years): <input id="number" name="age" type="number" min="1" max="120" step="1" placeholder="15"></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">How satisfied are you with our services so far?
+        <select id="dropdown">
+           <option value="">select an option</option>
+           <option value="1">Very satisfied</option>
+           <option value="2">Satisfied</option>
+           <option value="3">Neutral</option>
+           <option value="4">Dissatisfied</option>
+           <option value="5">Very dissatisfied</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Which of the wings is your favorite?<legend>
+        <label for="bakery"><input type="radio" name="favorite-wing" value="1" class="inline"id="bakery"> Bakery Wing</label>
+        <label for="bookstore"><input type="radio" name="favorite-wing" value="2" class="inline" id="bookstore"> Bookstore Wing</label>
+        <label for="none"><input type="radio" name="favorite-wing" value="3" class="inline" id="none"> None</label>
+    </fieldset>
+    <fieldset>
+      <legend>Which is your favourite Yve's Bakery product? (choose all that apply)</legend>
+      <label for="pizza"><input type="checkbox" name="baked" value="1"id="pizza" class="inline"> Pizza</label>
+      <label for="cake"><input type="checkbox" name="baked" value="2" id="cake" class="inline"> Cake</label>
+      <label for="casserole"><input type="checkbox" name="baked" value="3" id="casserole"class="inline"> Casserole</label>
+      <label for="meatpie"><input type="checkbox" name="baked" value="4" id="meatpie"class="inline"> Meatpie</label>
+      <label for="doughnut"><input type="checkbox" name="baked" value="5" id="doughnut"class="inline"> Doughnut</label>
+    </fieldset>
+    <fieldset>
+      <label for="thoughts">What would you add or change about Yve's Bakery and Bookstore? <textarea rows="4" cols="30" id="thoughts" name="thoughts" type="text" placeholder="Your thoughts..."></textarea></label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+   </form>
+   <p>We appreciate your time!</p>
+  </body>
+</html>
